@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBingo | profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="heading clip image">
+      The NewsBingo | Profile
+       </div>
+       <div class="miniheading clip image">
+        Get news of your Interest
+       </div>
+    
+      
+ <div class="options">
+    <span>Hi, <%=username%></span>
+    <a href="/homepage">Homepage</a>
+    <a href="/settings"><span>Settings</span></a>
+    <a href="/logout">Logout</a>
+   </div>
+  
+ 
+
+  <!--/*for loop*/-->
+
+  <% for(let count = 0; count <   total ; count++ ){ %>
+	  
+   <!--  -->
+   <div class="headline clip image"><%= fields[count] %></div>
+   <div cass="wrapper">
+      <div class="news">
+     
+       <% if(articles[count]!=null){%>
+    <% articles[count].data.articles.forEach(function(article,index){%>
+       <a href="<%-article.url%>" class="news__card" target="_blank">
+    <img src="<%-article.urlToImage%>" alt="">
+    <h3><%-article.title%></h3>
+    <h5><%-article.source.name%></h5>
+    <h5><%-article.publishedAt%></h5>
+  
+    </a>
+   <% }) %>
+   <%} else {%>
+     <div class="warning"> No Posts Found yet</div>
+       <%}%>
+      </div>
+    </div>
+
+
+
+   <!--  -->
+    
+   <% } %>
+
+<!-- New old one -->
+
+<footer class="footer_prof">
+   <ul class="footer-links">
+     <li>
+       <a href="#">About</a>
+     </li>
+     <li>
+       <a href="#">Privacy Policy</a>
+     </li>
+     <li>
+       <a href="#">Disclaimer</a>
+     </li>
+  </ul>
+ </footer>
+
+</body>
+</html>

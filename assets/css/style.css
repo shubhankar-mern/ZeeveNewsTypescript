@@ -1,0 +1,255 @@
+* {
+    font-family: 'Oswald', sans-serif;
+  }
+  body{
+    background: url('../images//background.png');
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
+  }
+  form > input,
+  form > select {
+    width: 400px;
+    margin: auto;
+  }
+  input[type='checkbox'] {
+    margin-left: 125px;
+  }
+  form > span {
+    margin-left: 40px;
+  }
+  .register-form {
+    height: auto;
+  
+    width: 500px;
+    border: 2px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .update-form {
+    height: 500px;
+  
+    width: 500px;
+    border: 2px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .login-form {
+    height: 150px;
+  
+    width: 500px;
+    border: 2px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .profile-form {
+    height: 150px;
+    width: 500px;
+    border: 2px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .changePassword-form {
+    height: 200px;
+  
+    width: 500px;
+    border: 2px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .heading {
+    border: 2px solid black;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: auto;
+    align-items: center;
+  }
+  .miniheading {
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: auto;
+    align-items: center;
+  }
+  /*footer*/
+  footer {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
+  .headline {
+    margin-top: 50px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 8rem;
+    color: black;
+  }
+  .footer-links {
+    list-style-type: none;
+  }
+  .footer-links > li > a {
+    list-style-type: none;
+    color: white;
+  }
+  /**/
+  .wrapper {
+    padding: 0 1rem;
+  }
+  .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 2rem;
+  }
+  .news .news__card {
+    text-decoration: none;
+    color: black;
+    background-color: blanchedalmond;
+  
+    border: 2px solid black;
+  }
+  .news__card :hover {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  }
+  .news__card > img {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+  .warning {
+    align-items: center;
+    font-size: 200px;
+    color: black;
+  }
+  .register_login {
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-right: 40%;
+    background: rgb(150, 149, 231);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 149, 231, 1) 8%,
+      rgba(0, 255, 214, 0.3337710084033614) 59%
+    );
+  }
+  .home_content {
+    border: 2px solid black;
+    margin-top: 80px;
+  }
+  .clip {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .image {
+    background-image: url('https://picsum.photos/500?image=1069');
+    background-size: cover;
+    background-position: center;
+  }
+  .options {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+  }
+  .options > span,
+  .options > a {
+    margin-left: 85%;
+  }
+  .options > a {
+    text-decoration: none;
+    color: white;
+  }
+  /*footer*/
+  .footer-links {
+    list-style-type: none;
+  }
+  .footer-links > li > a {
+    list-style-type: none;
+    color: white;
+  }
+  .footer_prof{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    left: 0px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    left: 0px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+  }
+  div.messages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul.messages {
+    list-style: none;
+    min-width: 600px;
+    max-width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+  }
+  
+  ul.messages * {
+    padding: 8px 12px;
+  }
+  
+  .messages .error {
+    background-color: #f87171;
+  }
+  .messages .success {
+    background-color: #6ee7b7;
+  }
+  .messages .warning {
+    background-color: #fcd34d;
+  }
+  .messages .info {
+    background-color: #93c5fd;
+  }
+  
+  .btn-box{
+    text-align: center;
+    margin:30px auto;
+  
+  }
+  .card{
+    background-color: aliceblue;
+    
+    border-radius: 2px;
+  height:auto;
+  min-height: 200px;
+  
+  display: none;
+  
+  
+  }
+  .card.active{
+    display: flex;
+    flex-direction: column;
+  }

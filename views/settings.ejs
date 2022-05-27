@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBingo | <%=title%></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="heading clip image">
+        The NewsBingo | Settings
+         </div>
+         <div class="miniheading clip image">
+          Get news of your Interest
+         </div>
+       
+         <div class="options">
+            <span>Hi, <%=findUserName%></span>
+            <a href="/homepage">Homepage</a>
+            <a href="/settings"><span>Settings</span></a>
+            <a href="/logout">Logout</a>
+           </div>
+          
+    <h2>Profile | Settings</h2>
+    <div class="profile-form">
+        <form>
+            <span><label for="subs_subscription">Current Subscription : </label>
+            <input type="text" id="subs_subscription" name="subs_subscription" disabled placeholder= '<%=subsList%>'/></span> 
+         
+           <span> <label for="subs_age">Age : </label> 
+            <input type="text" id="subs_age" name="subs_age" disabled placeholder= '<%=findAge%>'/></span>
+            <span><label for="subs_email">Current Email : </label> 
+            <input type="text" id="subs_email" name="subs_email" disabled placeholder= '<%=findEmail%>'/></span> 
+            <span><label for="subs_Profession">Profession : </label>
+            <input type="text" id="subs_Profession" name="subs_Profession" disabled placeholder= '<%=findProfession%>'/></span>
+            <span><label for="subs_sex">Sex : </label> 
+            <input type="text" id="subs_sex" name="subs_sex" disabled placeholder= '<%=findSex%>'/> </span>
+            <span><label for="subs_name">Name : </label> 
+            <input type="text" id="subs_name" name="subs_name" disabled placeholder= '<%=findUserName%>'/> </span>
+         
+            
+        </form>
+        <a href="/edit-subscription"><button id="edit-profile" >Edit Subscription</button></a> 
+    </div>
+    
+</body>
+</html>

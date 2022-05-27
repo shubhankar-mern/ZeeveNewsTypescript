@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBingo | <%=title%></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="heading clip image">
+        The NewsBingo | Settings
+         </div>
+         <div class="miniheading clip image">
+          Get news of your Interest
+         </div>
+         <div class="options">
+            <span>Hi, <%=findUserName%></span>
+            <a href="/homepage">Homepage</a>
+            <a href="/settings"><span>Settings</span></a>
+            <a href="/logout">Logout</a>
+           </div>
+          
+    <h2>Edit Subscription</h2>
+    
+        
+         <div class="update-form">
+            <p>Your current subscription is :<h2><%=subsList%></h2></p>
+            <form action="/update-Subscription" method="POST">
+         <span><label for="subscription">Change Subscription type to ( atleast 2):</label>
+            <br>
+            <input type="checkbox" name="subscription" value="Business" id="subs1">Business<br>             
+            <input type="checkbox" name="subscription" value="Headlines" id="subs2">Headlines<br>             
+            <input type="checkbox" name="subscription" value="Sports" id="subs3">Sports<br> 
+            <input type="checkbox" name="subscription" value="Technology" id="subs4">Technology<br>           
+            <br>  
+        </span>    
+        <input type="submit" value="Update"/>       
+    </form>
+</div>
+
+</body>
+</html>

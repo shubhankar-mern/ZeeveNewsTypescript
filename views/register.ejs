@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBingo | <%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="heading clip image">
+   The NewsBingo | Register
+    </div>
+    <div class="miniheading clip image">
+     Get news of your Interest
+    </div>
+    <div class="register-form">
+        <form action="/register/create" method="POST" data-multi-step>
+           
+            <div class="card active" data-step>
+                <span><label for="name">Name:</label></span>
+                <input type="text" id="name" name="name" required/>
+                
+                <span><label for="age">Age:</label></span> 
+                 <input type="number" id="age" name="age" required/>
+     
+                 <div class="btn-box">
+                    <button type="button" data-next>Next</button>
+                 </div>
+            </div>
+            <div class="card" data-step>
+                <span><label for="email">Email:</label></span> 
+                <input type="email" id="email" name="email" required/>
+    
+                <span><label for="profession">Profession:</label></span> 
+                    <select name="profession" id="profession" required>
+                     <option value="student">Student</option>
+                     <option value="private">Private job</option>
+                     <option value="government">Government job</option>
+                     <option value="defence">Defence job</option>
+                    </select>
+    
+                   
+                    <div class="btn-box">
+                        <button type="button" data-previous>Prev</button>
+                        <button type="button" data-next>Next</button>
+                     </div>
+            </div>
+            <div class="card" data-step>
+                <span><label for="sex">Sex:</label>
+                    <input type="radio" id="sexchoice1"
+                            name="sex" value="male" >
+                            <label for="sexchoice1">Male</label>
+
+                            <input type="radio" id="sexchoice12"
+                            name="sex" value="female">
+                            <label for="sexchoice2">Female</label></span>
+                
+                 
+
+                    <span><label for="subscription">Subscription type:( atleast 2)</label>
+                        <br>
+                        <input type="checkbox" name="subscription" value="Business" id="subs1">Business<br>             
+                        <input type="checkbox" name="subscription" value="Headlines" id="subs2">Headlines<br>             
+                        <input type="checkbox" name="subscription" value="Sports" id="subs3">Sports<br> 
+                        <input type="checkbox" name="subscription" value="Technology" id="subs4">Technology<br>           
+                        <br>  
+                    </span>
+                    
+                    <div class="btn-box">
+                        <button type="button" data-previous>Prev</button>
+                        <button type="button" data-next>Next</button>
+                     </div>
+            </div>
+            <div class="card" data-step>
+                 <span><label for="password">Password:</label></span>
+                        <input type="password" id="password" name="password"/> 
+                        
+                        <span><label for="confirm_password">Confirm Password:</label></span> 
+                            <input type="password" id="confirm_password" name="confirm_password" />
+
+                            <button type="button" data-previous>Prev</button>
+                     <input type="submit" value="Register"/> 
+            </div>
+           
+
+           
+
+                
+
+                             
+        </form>
+    </div>
+    <script type="text/javascript" src="/js/app.js"></script>
+    
+     
+</body>
+</html>

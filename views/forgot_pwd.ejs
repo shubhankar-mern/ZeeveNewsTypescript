@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password | <%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="heading clip image">
+        The NewsBingo | Change Password
+         </div>
+         <div class="miniheading clip image">
+          Get news of your Interest
+         </div>
+         <div class="changePassword-form">
+
+            <form action="/updatePassword" method="POST">
+
+                <span><label for="email">Email::</label></span>
+                    <input type="email" id="email" name="email"/>
+               
+                <span><label for="password">Password::</label></span>
+                    <input type="password" id="password" name="password"/> 
+                
+                 <span><label for="confirm_password">Confirm Password:</label></span>
+                <input type="password" id="confirm_password" name="confirm_password"/> 
+                                        
+                <input type="submit" value="Change Password"/>  
+               
+            </form>
+            
+         </div>
+         <%- include('../partials/footer') %>
+     
+     
+</body>
+</html>
